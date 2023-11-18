@@ -53,7 +53,6 @@ sudo mkfs -t ext4 /dev/webdata-vg/logs-lv
 22. Next, update **/etc/fstab** file so that the mount configuration will persist after restart of the server.
 23. The UUID of the device will be used to update the /etc/fstab file to get the UUID type: `sudo blkid` and copy both the apps-vg and logs-vg UUID (Excluding the double quotes)
 24. Type sudo `vi /etc/fstab` to open editor and update using the UUID you copied.
-![pix13](https://user-images.githubusercontent.com/74002629/182375342-2c0713a4-946d-4e2c-a756-84472eb1ec34.PNG)
 
 25. Test the configuration and reload the daemon: 
 ```
